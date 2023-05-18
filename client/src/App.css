@@ -1,0 +1,216 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button{
+  border: none;
+  cursor: pointer;
+}
+
+/* --------------------- Register ------------------------------------ */
+.semicircle-container-register{
+  width: 300px;
+  /* height: 150px; */
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-top: -100px;
+}
+.semicircle-register {
+  width: 400px;
+  height: 200px;
+  background-color: #EBFFF7;
+  border-radius: 0px 0px 300px 300px;
+}
+.register-page h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 35px;
+  margin-top: 30px;
+}
+.register-form-container{
+  border: 2px solid black;
+}
+.underlined-text {
+  text-decoration: underline;
+  text-underline-offset: 15px;
+}
+
+.registration_container {
+
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid green; */
+  width: 25%;
+  margin-top: 40px;
+}
+
+.registration_input {
+  display: flex;
+  width: 99%;
+  background-color: #EBFFF7;
+  font-family: 'Poppins', sans-serif;
+  color: #005642;
+  font-size: 14px;
+  padding: 7px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+
+}
+
+.registartion_image {
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  align-self: center;
+}
+
+.registration_input input {
+  outline: none;
+  border: none;
+  background-color: #EBFFF7;
+  width: 300px;
+
+}
+
+.registration_container button {
+  align-self: flex-end;
+  width: 50%;
+  padding: 13px;
+  background-color: #005642;
+  color: white;
+  border-radius: 10px;
+}
+
+
+input[type="checkbox"]:checked {
+  background: #005642;
+  color: white;
+}
+
+/* -------------------------------------Home------------------------------------ */
+.semicircle-container-home-1{
+  /* height: 150px; */
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: -1;
+  margin-right: -280px;
+  margin-top: -200px;
+}
+.semicircle-container-home-2{
+  /* height: 150px; */
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  margin-left: -350px;
+  margin-top: -200px;
+}
+.semicircle-home-1 {
+  width: 800px;
+  height: 400px;
+  background-color: #EBFFF7;
+  border-radius: 0px 0px 400px 400px;
+}
+.semicircle-home-2 {
+  width: 800px;
+  height: 400px;
+  background-color: #EBFFF7;
+  border-radius: 0px 0px 400px 400px;
+}
+.Homepage_nav {
+  display: flex;
+  border-bottom: 1px solid #696969;
+
+  padding: 30px;
+  justify-content: space-between;
+}
+
+.Homepage_nav .item3 {
+  margin-right: 100px;
+  width: 50px;
+  height: 42px;
+}
+
+.Homepage_nav .item2 {
+  width: 180px;
+  height: 92px;
+}
+
+.Homepage_nav .item1 {
+  width: 50px;
+  height: 41px
+}
+
+.Homepage_container {
+  display: flex;
+}
+
+.Homepage_sidebar {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #696969;
+  border-bottom: 0px;
+  border-top: 0px;
+  width: 15%;
+  height: 76.5vh;
+  align-items: flex-end;
+  font-family: 'Poppins', sans-serif;
+  text-align: left!important;
+}
+
+
+.Homepage_sidebar .item1 {
+  cursor: pointer;
+  width: 85%;
+  /* background-color: #005642; */
+  /* text-align: center; */
+  margin-bottom: 10px;
+  padding: 10px;
+  padding-left: 50px;
+  /* color: white; */
+}
+
+
+.dashboard_container {
+  display: flex;
+  flex-direction: column;
+  width: 53%;
+  /* border: 1px solid black; */
+  font-family: 'Poppins';
+  /* overflow: scroll; */
+
+}
+
+.dashboard_menu {
+  width: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* height: 40%;  */
+
+}
+
+
+
+.dashboard_menu button {
+  width: 48%;
+  padding: 5px 10px;
+  font-size: 28px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  background-color: white;
+  font-size: 20px;
+  color: #191919;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
