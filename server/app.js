@@ -16,7 +16,7 @@ app.use((req, res, next) => {
   });
 
 const registerRoutes=require('./routes/register');
-mongoose.connect("mongodb+srv://jayantjain2609:07432241242@node-shop-app.ke8idrm.mongodb.net/?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://<username>:<password>@node-shop-app.ke8idrm.mongodb.net/?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 
