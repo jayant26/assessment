@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router';
+import { useNavigate } from 'react-router-dom';
+import {  useParams } from 'react-router';
 import axios from "axios";
 import {  useEffect } from "react";
 import logo from '../res/logo.jpg';
@@ -13,6 +14,7 @@ import Network from '../components/Network';
 import Profile from '../components/Profile';
 const Home = () => {
     const id=useParams();
+    const navigate = useNavigate();
     const [name,setname]=useState("");
     console.log(id.id);
     useEffect(() => {
@@ -34,7 +36,9 @@ const Home = () => {
         logout: false
     });
     
-
+    const redirect=()=>{
+        navigate("/")
+    }
     const handleClick = (field) => {
         const updatedMenu = Object.keys(showMenu).reduce((acc, item) => {
             acc[item] = item === field;
@@ -51,7 +55,7 @@ const Home = () => {
 
             <div className='Homepage_nav'>
                 <div style={{ display: "flex" }}>
-                    <img src={back} className=" item1 registartion_image" />
+                    <img src={back} className=" item1 registartion_image" onClick={redirect}/>
                     <img src={logo} className='item2' />
                 </div>
                 <img src={notification} className="item3 registartion_image" />
