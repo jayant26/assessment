@@ -87,42 +87,42 @@ const Registration = () => {
                         <img src={name} className="registartion_image" />
                         <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
                             <div><label for="name">Name</label></div>
-                            {showInput.name && <input type="text" id="name" onChange={(e) => { seti_name(e.target.value) }} required />}
+                            {showInput.name && <input type="text" id="name" onChange={(e) => { seti_name(e.target.value) }} required autoComplete='off'/>}
                         </div>
                     </div>
                     <div className="registration_input" onClick={() => handleClick('email')}>
                         <img src={Mail} className="registartion_image" />
                         <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
                             <div><label for="email">Email</label></div>
-                            {showInput.email && <input type="text" id="email" onChange={(e) => { seti_email(e.target.value) }} required />}
+                            {showInput.email && <input type="text" id="email" onChange={(e) => { seti_email(e.target.value) }} required autoComplete='off'/>}
                         </div>
                     </div>
                     <div className="registration_input" onClick={() => handleClick('phone')}>
                         <img src={phone} className="registartion_image" />
                         <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
                             <div><label for="number">Phone no.</label></div>
-                            {showInput.phone && <input type="text" id="number" onChange={(e) => { setNo(e.target.value) }} required />}
+                            {showInput.phone && <input type="text" id="number" onChange={(e) => { setNo(e.target.value) }} required autoComplete='off'/>}
                         </div>
                     </div>
                     <div className="registration_input" onClick={() => handleClick('linkedin')}>
                         <img src={link} className="registartion_image" />
                         <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
                             <div><label for="link">Linkedin Link</label></div>
-                            {showInput.linkedin && <input type="text" id="link" onChange={(e) => { setlinkedin(e.target.value) }} required />}
+                            {showInput.linkedin && <input type="text" id="link" onChange={(e) => { setlinkedin(e.target.value) }} required autoComplete='off'/>}
                         </div>
                     </div>
                     <div className="registration_input" onClick={() => handleClick('country')}>
                         <img src={Flag} className="registartion_image" />
                         <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
                             <div><label for="country">Country</label></div>
-                            {showInput.country && <input type="text" id="country" onChange={(e) => { setcountry(e.target.value) }} required />}
+                            {showInput.country && <input type="text" id="country" onChange={(e) => { setcountry(e.target.value) }} required autoComplete='off'/>}
                         </div>
                     </div>
                     <div className="registration_input" onClick={() => handleClick('state')}>
                         <img src={Country} className="registartion_image" />
                         <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
                             <div><label for="state">State</label></div>
-                            {showInput.state && <input type="text" id="state" onChange={(e) => { setstate(e.target.value) }} required />}
+                            {showInput.state && <input type="text" id="state" onChange={(e) => { setstate(e.target.value) }} required autoComplete='off'/>}
                         </div>
                     </div>
                     <div style={{ display: 'flex' }}>
@@ -130,14 +130,14 @@ const Registration = () => {
                             <img src={City} className="registartion_image" />
                             <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
                                 <div><label for="city">City</label></div>
-                                {showInput.city && <input type="text" id="city" style={{ width: '70%' }} onChange={(e) => { setcity(e.target.value) }} required />}
+                                {showInput.city && <input type="text" id="city" style={{ width: '70%' }} onChange={(e) => { setcity(e.target.value) }} required autoComplete='off'/>}
                             </div>
                         </div>
                         <div className="registration_input" style={{ width: '45%' }} onClick={() => handleClick('pin')}>
                             <img src={Pin} className="registartion_image" />
                             <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
                                 <div><label for="pin">Pin code</label></div>
-                                {showInput.pin && <input type="text" id="pin" style={{ width: '70%' }} onChange={(e) => { setpin(e.target.value) }} required />}
+                                {showInput.pin && <input type="text" id="pin" style={{ width: '70%' }} onChange={(e) => { setpin(e.target.value) }} required autoComplete='off'/>}
                             </div>
                         </div>
                     </div>
